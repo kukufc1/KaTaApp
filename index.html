@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GitHub Repo Search</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      #autocomplete-list {
+        border: 1px solid #ccc;
+        display: none;
+        position: absolute;
+        background-color: white;
+      }
+      .item {
+        padding: 8px;
+        cursor: pointer;
+      }
+      .item:hover {
+        background-color: #f0f0f0;
+      }
+      #repo-list {
+        margin-top: 20px;
+      }
+      .repo-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <input
+      type="text"
+      id="repo-input"
+      placeholder="Search for repositories..."
+    />
+    <div id="autocomplete-list"></div>
+    <div id="repo-list"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
